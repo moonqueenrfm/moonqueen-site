@@ -1,0 +1,4 @@
+gunicorn
+gevent
+requests
+app
