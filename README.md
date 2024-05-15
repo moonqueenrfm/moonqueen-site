@@ -7,8 +7,8 @@ Styling is from Alex Rutar's ["How to Build a Personal Webpage from Scratch"](ht
 3. Navigate to your repository folder in a terminal, then run the following commands:
 ```
 $python3 -m venv .venv
-$. venv/bin/activate
+$. .venv/bin/activate
 $pip install Flask
-$flask --app hello.py run --debug
+$flask --app flaskapp.py run --debug
 ```
-The above sequence of commands will ensure a virtual python environment is created for the project. Flask will be installed as part of the virtual environment. A virtual environment avoids collisions with other projects using Python. `$. venv/bin/activate` will have to be ran every time you begin development. These steps were taken from the [Flask installation](https://flask.palletsprojects.com/en/3.0.x/installation/) page. 
+The above sequence of commands will ensure a virtual python environment is created for the project. Flask will be installed as part of the virtual environment. A virtual environment avoids collisions with other projects using Python. `$. .venv/bin/activate` will have to be ran every time you begin development. These steps were taken from the [Flask installation](https://flask.palletsprojects.com/en/3.0.x/installation/) page. 
