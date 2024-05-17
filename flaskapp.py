@@ -8,9 +8,13 @@ def hello_world():
 	return render_template("index.html")
 
 #About me
-@app.route("/about-me")
+@app.route("/about")
 def about_me():
 	return render_template("about-me.html")
+
+@app.route("/press-kit")
+def press_kit():
+	return render_template("press-kit.html")
 
 #404
 @app.errorhandler(404)
