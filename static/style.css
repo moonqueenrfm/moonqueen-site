@@ -14,6 +14,15 @@ body {
     "header nav"
     "ct ct"
 }
+.allison-regular {
+  font-family: "Allison", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+}
+
 html, body{
   margin: 0 auto;
   height: 100%;
