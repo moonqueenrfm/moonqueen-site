@@ -22,7 +22,6 @@ body {
   text-decoration: none;
   color: white;
 }
-
 html, body{
   margin: 0 auto;
   height: 100%;
@@ -40,7 +39,7 @@ nav a {
 h1,
 h2,
 strong {
-    color: #222;
+    color: rgb(126, 33, 126);
 }
 
 header {
@@ -76,22 +75,22 @@ h2 {
 a {
     color: #ffffff;
   }
-  @media screen and (max-width: 430px) {
-    body {
-      grid-template-columns: auto;
-      grid-template-rows: minmax(40px, auto) minmax(30px, auto) auto auto;
-      grid-template-areas:
-      "header"
-      "nav"
-      "ct"
-    }
-    header, nav {
-      text-align: center;
-      justify-self: center;
-    }
-    nav a {
-      margin: 0 10px;
-    }
+@media screen and (max-width: 430px) {
+  body {
+    grid-template-columns: auto;
+    grid-template-rows: minmax(10px, 90px) minmax(10px, 50px) auto auto;
+    grid-template-areas:
+    "header"
+    "nav"
+    "ct"
   }
+  header, nav {
+    text-align: center;
+    justify-self: center;
+  }
+  nav a {
+    margin: 0 10px;
+  }
+}
   
   

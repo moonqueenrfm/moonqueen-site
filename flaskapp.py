@@ -5,7 +5,7 @@ app = Flask(__name__)
 #Homepage
 @app.route("/")
 def hello_world():
-	return render_template("index.html")
+	return render_template("index.html", title="Homepage")
 #Music
 @app.route("/music")
 def music():

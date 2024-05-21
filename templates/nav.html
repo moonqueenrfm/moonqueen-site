@@ -1,0 +1,28 @@
+{# templates/nav.html #}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>{% block title %}{{ title }}{% endblock title %}</title>
+  </head>
+  <header><a href='/' class="allison-regular">MoonQueen</a></header>
+  <body>
+    <nav>
+        <a href="/about-me">About</a>
+        <a href="/press-kit">Press Kit</a>
+        <a href="/music">Music</a>
+        <a href="/tour">Tour</a>
+    </nav>
+    <article>
+        {% block content %}
+        {% endblock content %}
+    </article>
+  </body>
+</html>
