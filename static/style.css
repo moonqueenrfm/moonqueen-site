@@ -1,3 +1,25 @@
+#page {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 60px auto;
+  row-gap: 5px;
+  grid-template-areas:
+    "head nav"
+    "main main"
+    "foot foot"
+}
+#page > header{
+  grid-area: head;
+}
+#page > nav {
+  grid-area: nav;
+}
+#page > main {
+  grid-area: main;
+}
+#page > footer {
+  grid-area: foot;
+}
 body {
   background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,42,121,1) 42%, rgba(147,0,255,1) 86%); 
   background-repeat: no-repeat;
@@ -5,14 +27,19 @@ body {
   min-width: 0;
   padding: 0 10px 25px;
   font-family: "Helvetica", "Arial", sans-serif;
-  color: rgb(255, 255, 255);
-  display: grid;
-  row-gap: 5px;
-  grid-template-columns: auto auto;
-  grid-template-rows: 60px auto;
-  grid-template-areas:
-    "header nav"
-    "ct ct"
+}
+.splash{
+  background: white;
+  border-radius: 25px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+.album {
+  display: block;
+  max-width: 350px;
+  max-height: 350px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .allison-regular {
   font-family: "Allison", cursive;

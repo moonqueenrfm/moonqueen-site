@@ -12,17 +12,23 @@
 
     <title>{% block title %}{{ title }}{% endblock title %}</title>
   </head>
-  <header><a href='/' class="allison-regular">MoonQueen</a></header>
-  <body>
-    <nav>
-        <a href="/about-me">About</a>
-        <a href="/press-kit">Press Kit</a>
-        <a href="/music">Music</a>
-        <a href="/tour">Tour</a>
-    </nav>
-    <article>
-        {% block content %}
-        {% endblock content %}
-    </article>
-  </body>
+  <div id="page">
+    <header><a href='/' class="allison-regular">MoonQueen</a></header>
+    <body>
+      <nav>
+          <a href="/about-me">About</a>
+          <a href="/press-kit">Press Kit</a>
+          <a href="/music">Music</a>
+          <a href="/tour">Tour</a>
+      </nav>
+      <main>
+      {% block content %}
+      {% endblock content %}
+      </main>
+      <footer>
+        {% block foot %}
+        {% endblock foot %}
+      </fotter>
+    </body>
+  </div>
 </html>
