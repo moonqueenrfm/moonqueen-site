@@ -13,22 +13,21 @@
     <title>{% block title %}{{ title }}{% endblock title %}</title>
   </head>
   <div id="page">
-    <header><a href='/' class="allison-regular">MoonQueen</a></header>
+    <header>
+      <img class="moon" src="static/images/sundaymoon.png"/>
+      <a href='/' class="allison-regular moonqueen">MoonQueen</a>
+    </header>
     <body>
       <nav>
-          <a href="/about-me">About</a>
-          <a href="/press-kit">Press Kit</a>
-          <a href="/music">Music</a>
-          <a href="/tour">Tour</a>
+        <a href="/music">Music</a>
+        <a href="/tour">Tour</a>
+        <a href="/press-kit" >Press Kit</a>
+        <a href="/about-me">About</a>
       </nav>
-      <main>
+      <main class="splash">
       {% block content %}
       {% endblock content %}
       </main>
-      <footer>
-        {% block foot %}
-        {% endblock foot %}
-      </fotter>
     </body>
   </div>
 </html>

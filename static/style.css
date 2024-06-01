@@ -1,15 +1,19 @@
 #page {
   display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: 60px auto;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
   row-gap: 5px;
   grid-template-areas:
-    "head nav"
-    "main main"
-    "foot foot"
+    "head"
+    "main"
+    "nav"
 }
 #page > header{
   grid-area: head;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 #page > nav {
   grid-area: nav;
@@ -28,11 +32,28 @@ body {
   padding: 0 10px 25px;
   font-family: "Helvetica", "Arial", sans-serif;
 }
+.moon{
+  opacity: 0.6;
+  max-width: 215px;
+}
+.moonqueen{
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:rgb(176, 12, 190);
+  z-index: 1;
+  font-weight: 1000;
+  font-size: 100px;
+  text-decoration: none;
+}
 .splash{
-  background: white;
+  color: white;
   border-radius: 25px;
-  padding-top: 25px;
-  padding-bottom: 20px;
+  border-style: solid;
+  max-height: auto;
+  /*padding-top: 25px;
+  padding-bottom: 20px;*/
 }
 .album {
   display: block;
@@ -40,14 +61,11 @@ body {
   max-height: 350px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 .allison-regular {
   font-family: "Allison", cursive;
-  font-weight: 600;
   font-style: normal;
-  font-size: 50px;
-  text-decoration: none;
-  color: white;
 }
 html, body{
   margin: 0 auto;
@@ -57,40 +75,22 @@ h2 {
     margin-top: 1em;
     padding-top: 1em;
 }
-
+nav {
+  justify-self: center;
+}
 nav a {
-    margin-left: 20px;
-    text-align: right;
+  color: rgb(153, 177, 255);
+  margin-left: 20px;
+  text-align: center;
+  font-size: 1em;
 }
 
 h1,
 h2,
 strong {
-    color: rgb(126, 33, 126);
+    color: rgb(255, 255, 255);
 }
 
-header {
-    margin: 0px;
-    font-size: 23px;
-    grid-area: header;
-    justify-self: left;
-    align-self: end;
-}
-
-article {
-    font-size: 16px;
-    grid-area: ct;
-    border-top: 2px solid gray;  
-}
-
-nav {
-    font-size: 18px;
-    letter-spacing: 1px;
-    grid-area: nav;
-    justify-self: right;
-    align-self: end;
-  
-}
 
 h1 {
     font-size: 26px;
@@ -99,25 +99,7 @@ h1 {
 h2 {
     font-size: 23px;
 }
-a {
-    color: #ffffff;
-  }
-@media screen and (max-width: 430px) {
-  body {
-    grid-template-columns: auto;
-    grid-template-rows: minmax(10px, 90px) minmax(10px, 50px) auto auto;
-    grid-template-areas:
-    "header"
-    "nav"
-    "ct"
-  }
-  header, nav {
-    text-align: center;
-    justify-self: center;
-  }
-  nav a {
-    margin: 0 10px;
-  }
-}
+
+
   
   
