@@ -25,27 +25,33 @@
     </header>
     <body>
       <nav class="beth-ellen-regular">
-        <a href="/music">Music</a>
-        <a href="/tour">Tour</a>
-        <a href="/press-kit" >Press Kit</a>
-        <a href="/about-me">About</a>
+        <a href="/music" class="navlink">Music</a>
+        <a href="/tour" class="navlink">Tour</a>
+        <a href="/press-kit" class="navlink">Press Kit</a>
+        <a href="/about-me" class="navlink">About</a>
       </nav>
       <main class="splash">
       {% block content %}
       {% endblock content %}
       </main>
     </body>
-
+    
   </div>
   <script>
     const action1 = document.querySelector('.moonset');
     action1.addEventListener('click', () => {
-        const element = document.querySelector('body');
-        if(element.style.background==='linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,42,121,1) 42%, rgba(147,0,255,1) 86%)'){
-          element.style.background = '';
-        }else{
-          element.style.background = 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,42,121,1) 42%, rgba(147,0,255,1) 86%)';
-        }
+        const bg = document.querySelector('body');
+        bg.style.background = 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,42,121,1) 42%, rgba(147,0,255,1) 86%)';
+        const moonqueen = document.querySelector('.moonqueen');
+        moonqueen.style.color = 'white';
+        const splash = document.querySelector('.splash');
+        splash.style.color = 'white';
+        const h1 = document.querySelector('h1');
+        h1.style.color = 'white';
+        const links = document.querySelectorAll('nav a');
+        links.forEach((link)=>{
+          link.style.color = 'white';
+        });
     });
   </script>
 </html>
