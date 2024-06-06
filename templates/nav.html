@@ -6,19 +6,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beth+Ellen&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="static/style.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-
     <title>{% block title %}{{ title }}{% endblock title %}</title>
   </head>
   <div id="page">
     <header>
-      <img class="moon" src="static/images/sundaymoon.png"/>
-      <a href='/' class="allison-regular moonqueen">MoonQueen</a>
+      <button type="submit" class="moonset">
+        <img class="moon" src="static/images/sundaymoon.png"/>
+      </button>
+      <a href='/' class="allison-regular moonqueen">MoonQueen</a><!---->
     </header>
     <body>
-      <nav>
+      <nav class="beth-ellen-regular">
         <a href="/music">Music</a>
         <a href="/tour">Tour</a>
         <a href="/press-kit" >Press Kit</a>
@@ -29,5 +35,17 @@
       {% endblock content %}
       </main>
     </body>
+
   </div>
+  <script>
+    const action1 = document.querySelector('.moonset');
+    action1.addEventListener('click', () => {
+        const element = document.querySelector('body');
+        if(element.style.background==='linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,42,121,1) 42%, rgba(147,0,255,1) 86%)'){
+          element.style.background = '';
+        }else{
+          element.style.background = 'linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,42,121,1) 42%, rgba(147,0,255,1) 86%)';
+        }
+    });
+  </script>
 </html>

@@ -25,7 +25,10 @@
   grid-area: foot;
 }
 body {
-  background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,42,121,1) 42%, rgba(147,0,255,1) 86%); 
+  background: rgb(56,18,140);
+  background: linear-gradient(180deg, rgba(56,18,140,1) 10%, rgba(56,95,103,1) 75%, rgba(232,153,0,1) 97%); 
+  /*background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,42,121,1) 42%, rgba(147,0,255,1) 86%);
+  */
   background-repeat: no-repeat;
   max-width: 700px;
   min-width: 0;
@@ -36,19 +39,28 @@ body {
   opacity: 0.6;
   max-width: 215px;
 }
+.moonset{
+  background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+
+}
 .moonqueen{
   position: absolute;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color:rgb(176, 12, 190);
+  color:black;/*rgb(176, 12, 190);*/
   z-index: 1;
   font-weight: 1000;
   font-size: 100px;
   text-decoration: none;
 }
 .splash{
-  color: white;
+  color:black;
   border-radius: 25px;
   border-style: solid;
   max-height: auto;
@@ -62,9 +74,15 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+  color: black;
 }
 .allison-regular {
   font-family: "Allison", cursive;
+  font-style: normal;
+}
+.beth-ellen-regular {
+  font-family: "Beth Ellen", cursive;
+  font-weight: 400;
   font-style: normal;
 }
 html, body{
@@ -79,19 +97,16 @@ nav {
   justify-self: center;
 }
 nav a {
-  color: rgb(153, 177, 255);
+  color: black;/*rgb(153, 177, 255);*/
   margin-left: 20px;
   text-align: center;
   font-size: 1em;
 }
-
 h1,
 h2,
 strong {
     color: rgb(255, 255, 255);
 }
-
-
 h1 {
     font-size: 26px;
 }
@@ -99,7 +114,3 @@ h1 {
 h2 {
     font-size: 23px;
 }
-
-
-  
-  
