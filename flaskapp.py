@@ -22,7 +22,10 @@ def press_kit():
 @app.route("/tour")
 def tour():
 	return render_template("tour.html", title="Tour")
-@app.route
+#Lyrics
+@app.route("/lyrics")
+def lyrics():
+	return render_template("lyrics.html", title="Lyrics")
 #404
 @app.errorhandler(404)
 def page_not_found(error):
