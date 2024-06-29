@@ -41,12 +41,14 @@ body {
 }
 .moonset{
   background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    overflow: hidden;
-    outline: none;
-
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+.moon:hover{
+  opacity: 1;
 }
 .moonqueen{
   position: absolute;
@@ -66,7 +68,12 @@ body {
   max-height: 500px;
   padding-top: 25px;
   padding-bottom: 20px;
-  overflow: scroll;
+  overflow:scroll;
+  -ms-overflow-style: none;  /* IE and Edge no scrollbar */
+  scrollbar-width: none;  /* Firefox no scrollbar*/
+}
+.splash::-webkit-scrollbar {
+  display: none; /*chrome, safari no scrollbar*/
 }
 .album {
   display: block;
