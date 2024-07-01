@@ -1,5 +1,4 @@
 Simple static website using [Flask](https://flask.palletsprojects.com/en/3.0.x/#) framework<br/>
-Styling is from Alex Rutar's ["How to Build a Personal Webpage from Scratch"](https://rutar.org/writing/how-to-build-a-personal-webpage-from-scratch/) blog post
 
 ## Setup
 1. Ensure Python is installed on your machine
